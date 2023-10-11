@@ -2,9 +2,9 @@
 
 Each version of reCAPTCHA is implemented in its respective PHP file:
 
-- reCAPTCHA v2: [`v2.php`](./v2.php)
-- Invisible reCAPTCHA v2: [`invisible.php`](./invisible.php)
-- reCAPTCHA v3: [`v3.php`](./v3.php)
+- reCAPTCHA v2: [`v2.php`](./src/v2.php)
+- Invisible reCAPTCHA v2: [`invisible.php`](./src/invisible.php)
+- reCAPTCHA v3: [`v3.php`](./src/v3.php)
 
 ## reCAPTCHA v2
 - **Checkbox**: Required for users to interact with.
