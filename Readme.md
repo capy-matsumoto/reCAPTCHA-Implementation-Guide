@@ -11,8 +11,8 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
 
 | Feature                | reCAPTCHA v2 ([`v2.php`](./v2.php)) | Invisible reCAPTCHA v2 ([`invisible.php`](./invisible.php)) | reCAPTCHA v3 ([`v3.php`](./v3.php))            |
 |------------------------|-------------------------------------|-------------------------------------------------------------|------------------------------------------------|
-| **Checkbox**           | Required                            | Not displayed                                               | Not required                                   |
-| **Image Verification** | Might appear                        | Might appear                                                | Might appear                                   |
+| **Checkbox**           | Required                            | Not displayed                                               | Not displayed                                  |
+| **Image Verification** | Might appear                        | Might appear                                                | Not displayed                                  |
 | **Badge**              | Not displayed                       | Displayed but can be hidden (with user notice)              | Displayed but can be hidden (with user notice) |
 
 ## reCAPTCHA v2
@@ -45,8 +45,8 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
 
 
 ## reCAPTCHA v3
-- **Checkbox**: Required for users to interact with.
-- **Image Verification**: Might appear based on various factors.
+- **Checkbox**: Will not be displayed to the users.
+- **Image Verification**: Will not be displayed to the users.
 - **Badge**:
     - By default, it's displayed in the bottom right corner of the screen.
     - It can be hidden using CSS, but similar to Invisible reCAPTCHA, users must be informed explicitly that reCAPTCHA is in use.
