@@ -6,6 +6,15 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
 - Invisible reCAPTCHA v2: [`invisible.php`](./src/invisible.php)
 - reCAPTCHA v3: [`v3.php`](./src/v3.php)
 
+# Overview
+# reCAPTCHA Implementation Overview
+
+| Feature                | reCAPTCHA v2 ([`v2.php`](./v2.php)) | Invisible reCAPTCHA v2 ([`invisible.php`](./invisible.php)) | reCAPTCHA v3 ([`v3.php`](./v3.php))            |
+|------------------------|-------------------------------------|-------------------------------------------------------------|------------------------------------------------|
+| **Checkbox**           | Required                            | Not displayed                                               | Not required                                   |
+| **Image Verification** | Might appear                        | Might appear                                                | Might appear                                   |
+| **Badge**              | Not displayed                       | Displayed but can be hidden (with user notice)              | Displayed but can be hidden (with user notice) |
+
 ## reCAPTCHA v2
 - **Checkbox**: Required for users to interact with.
 - **Image Verification**: Might appear based on various factors.
@@ -31,6 +40,8 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
       [Privacy Policy](https://policies.google.com/privacy) and
       [Terms of Service](https://policies.google.com/terms) apply.
       ```
+      Please note: Even when the badge is hidden, reCAPTCHA will still function as intended.
+
 
 ## reCAPTCHA v3
 - **Checkbox**: Required for users to interact with.
@@ -40,3 +51,5 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
     - It can be hidden using CSS, but similar to Invisible reCAPTCHA, users must be informed explicitly that reCAPTCHA is in use.
 
       If you hide the badge, ensure to provide the aforementioned notice to the users.
+      Please note: Even when the badge is hidden, reCAPTCHA will still function as intended.
+
