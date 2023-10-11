@@ -8,5 +8,9 @@ services:
     volumes:
       - ./src:/var/www/html
     environment:
-      - FIDO_ID=${FIDO_ID}
-      - BEARER_TOKEN=${BEARER_TOKEN}
+      - RECAPTCHA_SITE_KEY=${RECAPTCHA_SITE_KEY}
+      - RECAPTCHA_SECRET_KEY=${RECAPTCHA_SECRET_KEY}
+      - INVISIBLE_SITE_KEY=${INVISIBLE_SITE_KEY}
+      - INVISIBLE_SECRET_KEY=${INVISIBLE_SECRET_KEY}
+      - V3_SITE_KEY=${V3_SITE_KEY}
+      - V3_SECRET_KEY=${V3_SECRET_KEY}
