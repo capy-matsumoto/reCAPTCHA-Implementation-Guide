@@ -90,4 +90,7 @@ button:active {
   top: 3px;
   box-shadow: none;
 }
+.grecaptcha-badge {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */
