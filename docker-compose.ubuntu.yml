@@ -1,0 +1,12 @@
+version: '3'
+services:
+  recaptcha:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    environment:
+      - FIDO_ID=${FIDO_ID}
+      - BEARER_TOKEN=${BEARER_TOKEN}
