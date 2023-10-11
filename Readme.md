@@ -52,5 +52,6 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
     - It can be hidden using CSS, but similar to Invisible reCAPTCHA, users must be informed explicitly that reCAPTCHA is in use.
 
       If you hide the badge, ensure to provide the aforementioned notice to the users.
+  
       Please note: Even when the badge is hidden, reCAPTCHA will still function as intended.
 
