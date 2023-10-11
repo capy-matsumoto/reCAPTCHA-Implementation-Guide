@@ -40,6 +40,7 @@ Each version of reCAPTCHA is implemented in its respective PHP file:
       [Privacy Policy](https://policies.google.com/privacy) and
       [Terms of Service](https://policies.google.com/terms) apply.
       ```
+      
       Please note: Even when the badge is hidden, reCAPTCHA will still function as intended.
 
 
